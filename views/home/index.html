@@ -1,0 +1,17 @@
+{% extends "common/layout.html" %}
+<!-- css -->
+{%block css%}
+<style>
+    body {
+        font-size: 14px;
+    }
+</style>
+{%endblock%}
+<!-- Body -->
+{%block body%}
+<div class="block-margin home-page">
+
+    <h1>Hello,{{title}}</h1>
+    {{items.length}} {% include "item/_item-list.html" %}
+</div>
+{%endblock %}

@@ -1,0 +1,12 @@
+.nav {
+    font-size: 16px;
+    @extend .clearfix;
+    li {
+        // @extend .fl;
+        text-align: right;
+    }
+    a {
+        display: block;
+        padding: 10px;
+    }
+}

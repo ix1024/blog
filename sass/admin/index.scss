@@ -1,0 +1,28 @@
+@import '../common/global';
+@import '../common/mixin';
+html,
+body {
+    color: $mainColor;
+    font: normal normal 12px/1.2 Microsoft YaHei;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    &,
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+.header {
+    height: 50px;
+    background-color: #273142;
+    color: #e5e5e5;
+}
+
+.body {}
+
+.menu {}
+
+.content {}

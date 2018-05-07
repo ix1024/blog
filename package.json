@@ -1,0 +1,25 @@
+{
+  "name": "site-1803",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node-dev ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "lodash": "^4.17.5",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.10",
+    "mongoose-express-session": "0.0.5",
+    "mongoose-session": "0.0.4",
+    "morgan": "~1.9.0",
+    "nunjucks": "^3.1.2",
+    "request": "^2.85.0",
+    "serve-favicon": "~2.4.5",
+    "webutils": "0.0.5"
+  }
+}

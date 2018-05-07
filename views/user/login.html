@@ -1,0 +1,23 @@
+{% extends "common/layout.html" %}
+<!-- css -->
+{%block css%}
+<style>
+    body {
+        font-size: 14px;
+    }
+</style>
+{%endblock%}
+<!-- Body -->
+{%block body%}
+
+<form action="">
+    <input type="text" id="userName" name="userName" value="kingwell">
+    <input type="password" id="password" name="password" value="kingwell">
+    <img src="/captcha" alt="">
+    <input type="text" id="captcha" name="captcha">
+    <input type="button" value="LOGIN" id="login">
+</form>
+
+{%endblock %} {% block js %}
+<script src="js/user/login.js"></script>
+{% endblock%}

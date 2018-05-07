@@ -1,0 +1,24 @@
+{% extends "common/layout.html" %}
+<!-- css -->
+{%block css%}
+<style>
+    body {
+        font-size: 14px;
+    }
+</style>
+{%endblock%}
+<!-- Body -->
+{%block body%}
+
+<form action="">
+    <input type="text" id="userName" name="userName" value="kingwell">
+    <input type="password" id="password" name="password" value="123456">
+    <img src="/captcha" alt="">
+    <input type="text" id="captcha" name="captcha" placeholder="captcha">
+    <input type="text" id="code" name="code" placeholder="授权码">
+    <input type="button" value="register" id="register">
+</form>
+
+{%endblock %} {% block js %}
+<script src="js/user/register.js"></script>
+{% endblock%}

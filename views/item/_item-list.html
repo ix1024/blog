@@ -1,0 +1,24 @@
+{% if items%}
+<div class="block-margin">
+    <ul class="item-ul">
+        {%for item in items|sort(attribute='createDate')%}
+        <li class="item-li">
+            <div class="item-wrap">
+                <div class="item-thumbnail">
+                    <img src="{{item.thumbnail}}" alt="{{item.name}}">
+                </div>
+                {% include "item/_item-info.html" %}
+                <div class="item-name">
+                    <a href="/item/{{item.id}}">
+                        {{item.name}}
+                    </a>
+                </div>
+
+                <div class="item-content">{{item.content|truncate(50)}}</div>
+
+            </div>
+        </li>
+        {%endfor%}
+    </ul>
+</div>
+{% endif %}

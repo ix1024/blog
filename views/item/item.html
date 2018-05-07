@@ -1,0 +1,13 @@
+{% extends "common/layout.html" %} {% block body%}
+<div class="block-margin">
+    <div>
+        {{item.name}}
+    </div>
+    <div>
+        {% include "item/_item-info.html" %}
+    </div>
+    <div>{{item.content| safe}}</div>
+    <div>{{item.thumbnail}}</div>
+    <div>{{item.createDate}}</div>
+</div>
+{% endblock%}

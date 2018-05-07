@@ -1,0 +1,112 @@
+@import 'common/global';
+@import 'common/mixin';
+@import "nav";
+html,
+body {
+    color: $mainColor;
+    font: normal normal 12px/1.2 Microsoft YaHei;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    &,
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+.page-wrap {
+    width: 80%;
+    margin: auto;
+    @extend .clearfix;
+}
+
+.block-margin {
+    margin-top: 20px;
+}
+
+.header {
+    @extend .clearfix;
+    .nav,
+    .logo {}
+    .logo {
+        font-size: 36px;
+        font-weight: bold;
+        // @extend .fl;
+    }
+}
+
+.footer {
+    @extend .clearfix;
+    background-color: #232323;
+    color: #d5d5d5;
+    min-height: 150px;
+}
+
+.item-ul {
+    @extend .clearfix;
+    .item-li {
+        @extend .fl;
+        @extend .clearfix;
+    }
+}
+
+.home-page {
+    .item-li {
+        width: 25%;
+        height: 180px;
+        overflow: hidden;
+        margin-top: 20px;
+        .item-thumbnail {}
+        .item-name {
+            @extend .ell;
+        }
+        .item-content {}
+        .item-wrap {
+            padding: 10px;
+        }
+        .item-info {
+            font-size: 12px;
+            @extend .ell;
+        }
+        img {
+            width: 100%;
+            height: 100px;
+        }
+    }
+}
+
+$pageHeader:450px;
+$padding:20px;
+$blockMargin:20px;
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: $pageHeader;
+    background-color: #353535;
+    &,
+    a {
+        color: #eeeeee;
+    }
+    .page-wrap {
+        width: auto;
+        padding: $padding * 2;
+    }
+}
+
+.page-body {
+    margin-left: $pageHeader + $padding;
+}
+
+.page-footer {
+    display: none;
+}
+
+.page-header,
+.page-body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
